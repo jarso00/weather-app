@@ -123,7 +123,7 @@ const startmap = (lon, lat) => {
             }),
             style: new ol.style.Style({
                 image: new ol.style.Icon({
-                    src: 'img/pin.png',
+                    src: 'weather-app/img/pin.png',
                     anchor: [0.5, 1],
                     height: 40
                 })
