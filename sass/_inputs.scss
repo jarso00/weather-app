@@ -1,0 +1,9 @@
+button{
+    @include button-input($grey-color, 10px, $white-color, 10px, 0px);
+}
+button:hover{
+    background-color: $light-grey-color;
+}
+input{
+    @include button-input($grey-color, 10px, $white-color, 10px, 0px)
+}

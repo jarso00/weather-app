@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplkacja Pogodowa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Open+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v7.2.2/ol.css">
+    <script src="https://cdn.jsdelivr.net/npm/ol@v7.2.2/dist/ol.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Aplikacja Pogodowa</h1>
+    </header>
+        <main>
+            <div class="left">
+                <div class="app_top">
+                    <input type="text" placeholder="podaj nazwę miasta">
+                    <button>Sprawdź Pogodę</button>
+                    <p class="error"></p>
+                </div>
+                <div class="app_bottom">
+                    <p class="date"></p>
+                    <h2 class="city"></h2>
+                    <div class="weather_info">
+                        <div class="weather_icon">
+                            <img src="" alt="">
+                            <p class="temp"></p>
+                        </div>
+                        <p class="description"></p>
+                    </div>
+                    <div class="info">
+                        <p>temperatura odczuwalna: <span class="feels_like"></span></p>
+                        <p>ciśnienie: <span class="pressure"></span></p>
+                        <p>wilgotność: <span class="humidity"></span></p>
+                        <p>prędkość wiatru: <span class="wind_speed"></span></p>
+                        <p>zachmurzenie: <span class="clouds"></span></p>
+                    </div>
+                </div>
+                <section>
+                    <h3>informacje o zanieczyszczeniu</h3>
+                    <img src="./img/pm25.png" alt="" class="pm25">
+                    <p class="polution_info"></p>
+                </section>
+            </div>
+            <div class="left">
+                <div id='map'></div>
+            </div>
+        </main>
+    <footer>
+        <p>Projekt Jarosław Sokołowski 66133</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+footer {
+    @include hader-footer(100%, center, 20px, $blue-color);
+
+    p{
+        color: $white-color;
+    }
+}

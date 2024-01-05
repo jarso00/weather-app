@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $light-blue-color;
+}
+
+header {
+    //background-color: $dark-color;
+    //width: 100%;
+    //text-align: center;
+    //padding: 15px;
+    @include hader-footer(100%, center, 20px, $blue-color);
+
+    h1 {
+        letter-spacing: 1px;
+        color: $white-color;
+    }
+}

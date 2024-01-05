@@ -1,0 +1,72 @@
+.app_bottom {
+    @include hader-footer(100%, left, 5px, #FFFFFF);
+    display: contents;
+    h2{
+        text-align: center;
+    }
+}
+
+.red-bacground {
+    background-color: $grey-color;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.weather_icon {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+
+    p {
+        font-size: x-large;
+    }
+}
+
+.weather_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error {
+    @include hader-footer(100%, left, 5px, $light-blue-color);
+
+}
+.pm25{
+    border-radius: 4000px;
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    color: $white-color;
+}
+
+.left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    max-height: 100%;
+    padding: 20px;  
+}
+#map{
+    height: 50vh;
+    width: 100%;
+}
+img{
+    width: 75px;
+}
+
+@media (max-width: 960px) {
+    main {
+      flex-direction: column;
+    }
+    .left{
+        width: 100%;
+    }
+  }
+
+  

@@ -1,0 +1,13 @@
+@mixin hader-footer($width, $textalign, $padding, $bgc) {
+    width: $width;
+    text-align: $textalign;
+    padding: $padding;
+    background-color: $bgc;
+}
+@mixin button-input($background, $pad, $col, $border-rad, $bord){
+    background-color: $background;
+    padding: $pad;
+    color: $col;
+    border-radius: $border-rad;
+    border: $bord;
+}
