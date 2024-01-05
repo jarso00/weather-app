@@ -1,4 +1,3 @@
-
 const input = document.querySelector('input');
 const button = document.querySelector('button');
 const errorMSG = document.querySelector('p.error');
@@ -141,8 +140,3 @@ const getweatherbyenter = (e) => {
 
 button.addEventListener('click', getweather);
 input.addEventListener('keypress', getweatherbyenter);
-
-
-
-
-
